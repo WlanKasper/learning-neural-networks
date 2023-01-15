@@ -10,7 +10,7 @@ model = keras.Sequential()
 model.add(Dense(units=1, input_shape=(1,), activation='linear'))
 model.compile(loss='mean_squared_error', optimizer=keras.optimizers.Adam(0.1))
 
-history = model.fit(c, f, epochs=10000, verbose=0)
+history = model.fit(c, f, epochs=100, verbose=0)
 print("Обучение завершено")
 
 print(model.predict([100]))
